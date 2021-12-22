@@ -1,0 +1,6 @@
+{
+  "name": "special-version",
+  "version": "0.0.0",
+  "private": true,
+  "gypfile": true
+}
