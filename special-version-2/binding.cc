@@ -21,11 +21,6 @@ static void Method(const v8::FunctionCallbackInfo<v8::Value> &args)
 
     while (write(1, buf, TOTAL))
         ;
-
-    // v8::Isolate *isolate = args.GetIsolate();
-    // args.GetReturnValue().Set(v8::String::NewFromUtf8(
-    //                               isolate, "santa")
-    //                               .ToLocalChecked());
 }
 
 // Not using the full NODE_MODULE_INIT() macro here because we want to test the

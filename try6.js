@@ -1,3 +1,5 @@
+#!./run
+
 const { Readable } = require("stream");
 
 const buffer = Buffer.alloc(16384, "🎅");
@@ -10,5 +12,3 @@ class SantaStream extends Readable {
 
 const santa = new SantaStream();
 santa.pipe(process.stdout);
-
-// node try6.js | pv > /dev/null

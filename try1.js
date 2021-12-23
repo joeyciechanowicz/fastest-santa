@@ -1,5 +1,6 @@
+#!./run
+
 while (true) {
+  // debugger;
   console.log("🎅");
 }
-
-// node try1.js | pv > /dev/null

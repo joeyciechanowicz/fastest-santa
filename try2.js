@@ -1,5 +1,5 @@
-while (true) {
-  process.stdout.write("🎅");
-}
+#!./run
 
-// node try2.js | pv > /dev/null
+while (true) {
+  process.stdout.write("🎅\n");
+}

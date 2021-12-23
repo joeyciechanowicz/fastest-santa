@@ -1,9 +1,12 @@
+#!./run
+
 const fs = require("fs");
 
-const buffer = Buffer.alloc(65336, "🎅");
-const res = buffer.toString();
-while (true) {
-  process.stdout.write(res);
+// large buffer is used
+const buffer = Buffer.alloc(65536, "🎅");
+
+function write() {
+  fs.write(process.stdout.fd, buffer, write);
 }
 
-// node try5-larger.js | pv > /dev/null
+fs.write(process.stdout.fd, buffer, write);
