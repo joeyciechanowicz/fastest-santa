@@ -8,4 +8,4 @@ function write() {
   fs.write(process.stdout.fd, buffer, write);
 }
 
-fs.write(process.stdout.fd, buffer, write);
+write();

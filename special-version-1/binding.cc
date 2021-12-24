@@ -4,8 +4,6 @@
 #include <string>
 using namespace std;
 
-using namespace std;
-
 #define LEN 5 // size of a unicode santa emoji
 #define TOTAL 16384
 

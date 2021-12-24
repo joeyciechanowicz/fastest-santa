@@ -1,6 +1,6 @@
 #!./run
 
 while (true) {
-  // debugger;
+  debugger;
   console.log("🎅");
 }
